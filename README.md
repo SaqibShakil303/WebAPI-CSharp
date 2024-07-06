@@ -1,4 +1,4 @@
-Hello Everyone this is Csharp Web API for EmployeeAdmin
+Hello Everyone this is C-sharp Web API for EmployeeAdmin
 
 where I have integrated CRUD operation with few easy steps:
 
@@ -7,12 +7,12 @@ where I have integrated CRUD operation with few easy steps:
 2> Install Nuget package from manage nuget package by right clicking on dependencies(i)Microsoft.EnitiyFrameworkCore.SqlServer, (ii)Microsoft.EnitiyFrameworkCore.Tools.
 
 3> (a)Create *Models* folder inside project folder and Create *Entities* folder inside Models folder ("An entities is basically something with an indentity")
-   (b)Create Create *employee.cs* class inside Entities
+   (b)Create *employee.cs* class inside Entities
    (c)Create identifier i.e (public Guid Id{get; set;} public Name Gmail etc ) inside employee.cs, You can use required keyword if you want name etc to be not null.
    
-4> After defining employee Object Create *ApplicationDbContext* class inside *Data* Folder  
-  a)Inherit DBContext class(comes from entity framework package installed) inside applicationDbContext 
-  b)Create constructor by shortcut ctor
+4> After defining employee Object Create *ApplicationDbContext* class inside *Data* Folder.
+  a)Inherit DBContext class(comes from entity framework package installed) inside applicationDbContext.
+  b)Create constructor by shortcut ctor.
   c)pass parameter inside constructor -> DbContext options<ApplicationDbContext> options : base(options)
   b)Add a property for the collection stored in the database(we need to have a dbset type property in the database)
   c)prop shortcut -> public int myproperty{get;set} change type to class entity i.e (Dbset<employee>) and property name to prural of entity i.e (employees).
